@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.safari.SafariDriver;
 
 public class BrowserFactory {
 
@@ -22,6 +23,10 @@ public class BrowserFactory {
         }else if (browserType.equalsIgnoreCase("edge")) {
             WebDriverManager.edgedriver().setup();
             return new EdgeDriver();
+
+        }else if (browserType.equalsIgnoreCase("safari")) {
+            WebDriverManager.safaridriver().setup();
+            return new SafariDriver();
 
         }else {
             System.out.println("Given browser type does not exist/or is not currently supported");
