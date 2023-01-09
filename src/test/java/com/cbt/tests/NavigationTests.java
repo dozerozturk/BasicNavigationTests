@@ -14,8 +14,6 @@ public class NavigationTests {
         edge();
         safari();
 
-
-
     }
 
 
@@ -26,11 +24,9 @@ public class NavigationTests {
         //2. Go to website https://google.com
         driver.get("https://google.com");
 
-
         //3. Save the	title in a string variable
         String googleTitle= driver.getTitle();
         System.out.println(googleTitle);
-
 
         //4. Go to https://etsy.com
         driver.navigate().to("https://etsy.com");
@@ -150,11 +146,9 @@ public class NavigationTests {
         //2. Go to website https://google.com
         driver.get("https://google.com");
 
-
         //3. Save the	title in a string variable
         String googleTitle= driver.getTitle();
         System.out.println(googleTitle);
-
 
         //4. Go to https://etsy.com
         driver.navigate().to("https://etsy.com");
@@ -180,7 +174,6 @@ public class NavigationTests {
         StringUtility.verifyEquals(etsyTitle,etsyTitle2);
 
         driver.close();
-
 
     }
 
